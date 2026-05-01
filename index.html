@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Blog de Informática</title> <!-- Título de la pestaña -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el CSS -->
+</head> 
+
+<body> 
+
+<header> 
+    <h1 id="titulo">Blog de Informática</h1>
+</header> 
+
+<nav> <!-- Menú de navegación -->
+    <ul> <!-- Lista no ordenada -->
+        <li><a href="#">Inicio</a></li> <!-- Enlace al inicio -->
+        <li><a href="#conceptos">Conceptos</a></li> <!-- Enlace a sección conceptos -->
+        <li><a href="#tabla">Tecnologías</a></li> <!-- Enlace a tabla -->
+        <li><a href="#contacto">Contacto</a></li> <!-- Enlace a formulario -->
+    </ul>
+</nav> <!-- Fin del nav -->
+
+<main>
+
+    <div class="contenedor"> <!-- clase Contenedor general (para flexbox) -->
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="contenido"> <!-- clase "contenenido" secundario-->
+
+            <section id="conceptos"> <!-- Sección de conceptos -->
+                <h2>Conceptos de Informática</h2> 
+
+                <article class="post"> <!-- Artículo individual -->
+                    <h3>¿Qué es la informática?</h3>
+                    <p>La informática estudia cómo procesar información de forma automática usando computadoras.</p> <!-- contenido de texto -->
+                </article> <!-- Fin artículo -->
+
+                <article class="post"> <!-- Otro artículo -->
+                    <h3>¿Qué es HTML?</h3>
+                    <p>Lenguaje que estructura páginas web.</p>
+                </article>
+
+                <article class="post">
+                    <h3>¿Qué es CSS?</h3>
+                    <p>Lenguaje que da estilo visual a las páginas.</p>
+                </article>
+
+                <article class="post"> 
+                    <h3>¿Qué es hardware?</h3>
+                    <p>Son los componentes físicos de una computadora.</p>
+                </article>
+
+                <article class="post">
+                    <h3>¿Qué es software?</h3>
+                    <p>Son los programas que hacen funcionar al hardware.</p>
+                </article>
+
+            </section> <!-- Fin sección conceptos -->
+
+            <hr> <!-- Línea separadora -->
+
+            <section id="tabla"> <!-- Sección de tabla -->
+                <h2>Comparación de Tecnologías</h2>
+
+                <table> <!-- Tabla -->
+                    <thead> <!-- Encabezado de tabla -->
+                        <tr> <!-- Fila -->
+                            <th>Tecnología</th> <!-- Celda de encabezado -->
+                            <th>Tipo</th>
+                            <th>Dificultad</th>
+                        </tr>
+                    </thead>
+
+                    <tbody> <!-- Cuerpo de tabla -->
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estructura</td>
+                            <td>Baja</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Diseño</td>
+                            <td>Media</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Programación</td>
+                            <td>Alta</td>
+                        </tr>
+                    </tbody>
+                </table> <!-- Fin tabla -->
+            </section> <!-- Fin sección tabla -->
+
+            <hr> <!-- Separador -->
+
+            <section> <!-- Sección de listas -->
+                <h2>Listas de Categorías</h2>
+
+                <ul> <!-- Lista sin orden -->
+                    <li>Frontend</li>
+                    <li>Backend</li>
+                </ul>
+
+                <ol> <!-- Lista ordenada -->
+                    <li>Estructura</li>
+                    <li>Lógica</li>
+                    <li>Interactividad</li>
+                </ol>
+            </section> <!-- Fin sección listas -->
+
+            <hr> <!-- Separador -->
+
+            <section id="contacto"> <!-- Sección de contacto -->
+                <h2>Contacto</h2>
+
+                <form> <!-- Formulario -->
+
+                    <label>Nombre:</label> <!-- Etiqueta label Es el texto que describe cada campo. Mejora la accesibilidad
+                     y ayuda al usuario a entender qué debe ingresar. -->
+                    <input type="text"> <!-- Campo texto Es el campo donde el usuario escribe o selecciona datos.-->
+
+                    <br><br> <!-- Saltos de línea -->
+
+                    <label>Email:</label>
+                    <input type="email"> <!-- Campo email -->
+
+                    <br><br>
+
+                    <label>Mensaje:</label>
+                    <textarea></textarea> <!-- Área de texto -->
+
+                    <br><br>
+
+                    <button>Enviar</button> <!-- Botón -->
+                </form> <!-- Fin formulario -->
+
+            </section> <!-- Fin contacto -->
+
+        </div> <!-- Fin contenido del contenido secundario -->
+
+        <!-- ASIDE A LA DERECHA -->
+        <aside> <!-- Barra lateral -->
+            <h3>Categorías</h3>
+            <ul>
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>Base de Datos</li>
+            </ul>
+
+            <h3>Tecnologías Populares</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </aside>
+
+    </div> <!-- Fin contenedor principal -->
+
+</main>
+
+</body>
+</html> 
